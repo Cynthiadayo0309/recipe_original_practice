@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="author" content="しあラボ">
+    <meta name="description" content="「しあキッチン」は、ユーザーの皆様のレシピを共有するレシピサイトです。">
+    <meta name="keyword" content="料理,レシピ,ごはん,作り方">
+    <title>しあキッチン | レシピの共有ならしあキッチン</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="medium.css" media="screen and (max-width:768px)">
+</head>
+<body>
+    <header>
+            <div id="inner_top">
+                <h1>
+                    <img src="images/chialogo.png" alt="ロゴ画像" width="240px" height="108px">
+                </h1>
+                <div id="content_box">
+                    <div class="box">
+                        <label for="genre_select" class="genre">ジャンル</label>
+                        <select name="genre" id="genre_select" class="genre_select">
+                            <option value="">選択しない</option>
+                            <option value="A">ごはん</option>
+                            <option value="B">汁物</option>
+                            <option value="C">おかず</option>
+                            <option value="D">麺・鍋もの</option>
+                            <option value="E">スイーツ</option>
+                        </select>
+                    </div>
+                    
+                    <div class="box">
+                        <label for="time_select">
+                            <img src="images/cookingtime.png" alt="時計" width="34px" height="40px">
+                        </label>
+                        <select name="time" id="time_select" class="time_select">
+                            <option value="">選択しない</option>
+                            <option value="10">10分以内</option>
+                            <option value="20">20分以内</option>
+                            <option value="30">30分以内</option>
+                            <option value="40">40分以内</option>
+                            <option value="50">50分以内</option>
+                            <option value="60">60分以内</option>
+                            <option value="61">60分超過</option>
+                        </select>
+                    </div>
+
+                    <dl class="box">
+                        <dt>キーワード</dt>
+                        <dd>
+                            <input type="text" name="keyword">
+                        </dd>
+                    </dl>
+
+                    <input type="submit" value="検索" class="box" id="submit_box">
+                    
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div id="inner_bottom" class="box-shadow">
+                <nav class="inner_nav">
+                    <ul>
+                        <li><a href="#">ホーム</a></li>
+                        <li><a href="#">ごはん</a></li>
+                        <li><a href="#">おかず</a></li>
+                        <li><a href="#">人気レシピ</a></li>
+                        <li><a href="#">新着レシピ</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <div id="wrapper">
+        <main>
+            <section id="recomend">
+                <img src="images/salmon.jpg" alt="料理画像" width="678px" height="450px">
+                <p id="recomend_week">今週のおすすめ</p>
+                <h2 class="recomend_recipe_name">レシピ名が入ります</h2>
+                <p class="recomend_user_name">ユーザー名が入ります</p>
+                <p class="see_recipe"><a href="#">レシピを見る</a></p>
+            </section>
+        </main>
+
+        <section class="advertising">
+            <div class="first_ad">
+                <img src="images/add.jpg" alt="広告" width="255px" height="255px">
+            </div>
+            <div>
+                <img src="images/add.jpg" alt="広告" width="255px" height="255px">
+            </div>
+        </section>
+
+        <div class="clearfix"></div>
+
+        <section id="new_recipe">
+            <div class="new_recipe_title">
+                <h3>新着レシピ</h3>
+            </div>
+            <ul class="new_recipe_information">
+                <li>
+                    <a href="#">
+                        <img src="images/canape.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/canape.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/canape.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/pasta.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/pasta.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/pasta.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <img src="images/sukiyaki.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/sukiyaki.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/sukiyaki.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/tyahan.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/tyahan.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/tyahan.jpg" alt="レシピ画像" width="215px" height="185px">
+                        <p class="new_recipe_name">レシピ名が入ります</p>
+                    </a>
+                </li>
+            </ul>
+            <p class="more_information">
+                <a href="#">他の新着レシピはこちら</a>
+            </p>
+        </section>
+        
+        <div id="sideber">
+            <div id="banner_ad">
+                <img src="images/banner_03.png" alt="バナー">
+            </div>
+
+            <section id="typical_keyword">
+                <h4 class="typical_title">定番キーワード</h4>
+                <ul>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                    <li><a href="#">ワード</a></li>
+                </ul>
+            </section>
+
+            <section id="typical_recipe">
+                <h4 class="typical_title">定番レシピ</h4>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <dl>
+                                <dt>
+                                    <img src="images/salmon.jpg" alt="サムネイル" width="75px" height="50px">
+                                </dt>
+                                <dd>
+                                    <h5>レシピ名が入ります</h5>
+                                    <img src="images/icon_tag.png" alt="タグ" class="icon_tag" width="7px" height="7px">
+                                    <span>キーワード</span>
+                                    <img src="images/icon_user.png" alt="ユーザー" class="icon_tag" width="9px" height="9px">
+                                    <span>ユーザー名</span>
+                                    <p class="recipe_introduction">レシピの説明が入ります。</p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <dl>
+                                <dt>
+                                    <img src="images/canape.jpg" alt="サムネイル" width="75px" height="50px">
+                                </dt>
+                                <dd>
+                                    <h5>レシピ名が入ります</h5>
+                                    <img src="images/icon_tag.png" alt="タグ" class="icon_tag" width="7px" height="7px">
+                                    <span>キーワード</span>
+                                    <img src="images/icon_user.png" alt="ユーザー" class="icon_tag" width="9px" height="9px">
+                                    <span>ユーザー名</span>
+                                    <p class="recipe_introduction">レシピの説明が入ります。</p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <dl>
+                                <dt>
+                                    <img src="images/pasta.jpg" alt="サムネイル" width="75px" height="50px">
+                                </dt>
+                                <dd>
+                                    <h5>レシピ名が入ります</h5>
+                                    <img src="images/icon_tag.png" alt="タグ" class="icon_tag" width="7px" height="7px">
+                                    <span>キーワード</span>
+                                    <img src="images/icon_user.png" alt="ユーザー" class="icon_tag" width="9px" height="9px">
+                                    <span>ユーザー名</span>
+                                    <p class="recipe_introduction">レシピの説明が入ります。</p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <dl>
+                                <dt>
+                                    <img src="images/sukiyaki.jpg" alt="サムネイル" width="75px" height="50px">
+                                </dt>
+                                <dd>
+                                    <h5>レシピ名が入ります</h5>
+                                    <img src="images/icon_tag.png" alt="タグ" class="icon_tag" width="7px" height="7px">
+                                    <span>キーワード</span>
+                                    <img src="images/icon_user.png" alt="ユーザー" class="icon_tag" width="9px" height="9px">
+                                    <span>ユーザー名</span>
+                                    <p class="recipe_introduction">レシピの説明が入ります。</p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <dl>
+                                <dt>
+                                    <img src="images/cupcakes.jpg" alt="サムネイル" width="75px" height="50px">
+                                </dt>
+                                <dd>
+                                    <h5>レシピ名が入ります</h5>
+                                    <img src="images/icon_tag.png" alt="タグ" class="icon_tag" width="7px" height="7px">
+                                    <span>キーワード</span>
+                                    <img src="images/icon_user.png" alt="ユーザー" class="icon_tag" width="9px" height="9px">
+                                    <span>ユーザー名</span>
+                                    <p class="recipe_introduction">レシピの説明が入ります。</p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="advertising">
+                <img src="images/add.jpg" alt="広告画像" class="ad_bottom" width="255px" height="255px">
+            </section>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <footer>
+        <p>Copyright ©︎ しあごはん.com All right reserved</p>
+    </footer>
+</body>
+</html>
